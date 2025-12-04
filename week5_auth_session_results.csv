@@ -1,0 +1,10 @@
+test_type,target,endpoint,username,password,status_code,evidence,notes,cookie_name,cookie_value,cookie_flags
+cookie_analysis,http://localhost:8080/login.php,http://localhost:8080/login.php,,,200,missing_HttpOnly;missing_Secure;missing_SameSite;low_entropy_session_id,,PHPSESSID,iujf544mivhehp7sfvroo0q921,"path=/, security=low"
+weak_credential,http://localhost:8080/login.php,http://localhost:8080/login.php,admin,password,200,login_success,Login appeared successful,,,
+weak_credential,http://localhost:8080/login.php,http://localhost:8080/login.php,root,root,200,login_success,Login appeared successful,,,
+weak_credential,http://localhost:8080/login.php,http://localhost:8080/login.php,user,user,200,login_success,Login appeared successful,,,
+bruteforce,http://localhost:8080/login.php,http://localhost:8080/login.php,admin,password,200,login_success,Bruteforce success,,,
+session_fixation,http://localhost:8080/login.php,http://localhost:8080/login.php,,,200,vulnerable,Server preserved supplied session cookie,PHPSESSID,fixed_2198,
+session_fixation,http://localhost:8080/login.php,http://localhost:8080/login.php,,,200,vulnerable,Server preserved supplied session cookie,session,fixed_2198,
+session_fixation,http://localhost:8080/login.php,http://localhost:8080/login.php,,,200,vulnerable,Server preserved supplied session cookie,SID,fixed_2198,
+session_hijack,http://localhost:8080/login.php,,,,,denied,Hijack failed,PHPSESSID;security,ir92fqtu786e10vav48d5sc1o1;low,

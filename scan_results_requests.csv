@@ -1,0 +1,5 @@
+page,action,method,input_name,input_type,input_value,link_count
+http://localhost:8080,http://localhost:8080/login.php,POST,username,text,,0
+http://localhost:8080,http://localhost:8080/login.php,POST,password,password,,0
+http://localhost:8080,http://localhost:8080/login.php,POST,Login,submit,Login,0
+http://localhost:8080,http://localhost:8080/login.php,POST,user_token,hidden,91d8a4aa097694efd5985179863a31b1,0

